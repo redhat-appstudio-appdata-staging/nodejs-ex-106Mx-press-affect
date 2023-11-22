@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: nodejs-ex
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads-stage/1testaccount-tenant/nodejs-ex/nodejs-ex@sha256:17cd40e39022911a8a5e7627526c5842744e772785131aa1bffc64662bd423b3
+        name: my-nodejs
+        resources: {}
+status: {}
